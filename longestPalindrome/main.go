@@ -23,8 +23,7 @@ func longestPalindrome(s string) string {
 		return s
 	}
 
-	// 最长回文的首字符索引，和最长回文的长度
-	begin, maxLen := 0, 1
+	begin, maxLen := 0, 1 // 最长回文的首字符索引，和最长回文的长度
 
 	// 在 for 循环中
 	// b 代表回文的**首**字符索引号，
@@ -67,6 +66,5 @@ func longestPalindrome(s string) string {
 			maxLen = newLen
 		}
 	}
-
 	return s[begin : begin+maxLen]
 }
