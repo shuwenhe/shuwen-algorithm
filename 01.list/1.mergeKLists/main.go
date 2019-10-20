@@ -10,13 +10,17 @@
 
 package main
 
+import (
+	"container/list"
+)
+
 type ListNode struct {
 	Val  int
 	Next *ListNode
 }
 
 func main() {
-
+	list.List
 }
 
 func mergeKLists(lists []*ListNode) *ListNode {

@@ -12,14 +12,16 @@ type ListNode struct {
 func main() {
 	headNode := &ListNode{}
 	listData := headNode
-	Insert(1, listData, headNode)
-	Insert(2, listData, headNode)
-	Insert(3, listData, headNode)
+	InsertTail(7, listData, headNode)
+	PrintList(listData)
+	InsertTail(8, listData, headNode)
+	PrintList(listData)
+	InsertTail(9, listData, headNode)
 	PrintList(listData)
 }
 
-// 1.Insert
-func Insert(value int, list *ListNode, position *ListNode) {
+// 每次在链表头部插入
+func InsertTail(value int, list *ListNode, position *ListNode) {
 	tempCell := new(ListNode)
 	if tempCell == nil {
 		fmt.Println("out of space")
@@ -32,7 +34,7 @@ func Insert(value int, list *ListNode, position *ListNode) {
 // 2.Print
 func PrintList(list *ListNode) {
 	if list.Next != nil {
-		fmt.Println(list.Val)
+		fmt.Print(list.Val, "->")
 		PrintList(list.Next)
 	} else {
 		fmt.Println(list.Val)
