@@ -1,7 +1,6 @@
-# algorithm
 # array
 # queue
 # list
-tree
-sort
-string
+# tree
+# sort
+# string
