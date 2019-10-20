@@ -23,7 +23,6 @@ func main() {
 	PrintList(listData)
 }
 
-// 2.Print
 func PrintList(list *ListNode) {
 	if list.Next != nil {
 		fmt.Println(list.Val)
@@ -33,7 +32,6 @@ func PrintList(list *ListNode) {
 	}
 }
 
-// 1.Insert
 func Insert(value int, list *ListNode, position *ListNode) {
 	tempCell := new(ListNode)
 	if tempCell == nil {
