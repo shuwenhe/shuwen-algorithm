@@ -18,7 +18,8 @@ import (
 )
 
 func main() {
-	num := reverse(123)
+	x := 123
+	num := reverse(x)
 	fmt.Println(num)
 }
 
