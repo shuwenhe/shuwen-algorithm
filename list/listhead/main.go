@@ -9,10 +9,6 @@ type ListNode struct {
 	Next *ListNode
 }
 
-type List struct {
-	headNode *ListNode // head node
-}
-
 func main() {
 	headNode := &ListNode{}
 	listData := headNode
@@ -20,7 +16,6 @@ func main() {
 	Insert(2, listData, headNode)
 	Insert(3, listData, headNode)
 	PrintList(listData)
-	// fmt.Println(listData)
 }
 
 // 1.Insert
