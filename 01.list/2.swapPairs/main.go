@@ -21,6 +21,8 @@ func main() {
 	Insert(4, listData, head)
 	swapPairs(head)
 	PrintList(listData)
+	// swapPairs(listData)
+	// PrintList(head)
 }
 
 func PrintList(list *ListNode) {
