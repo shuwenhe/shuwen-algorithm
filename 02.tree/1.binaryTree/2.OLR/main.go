@@ -5,43 +5,31 @@ import (
 )
 
 type Node struct {
-	Name string
-	L, R *Node
-}
-
-func (node *Node) Select() {
-	fmt.Print(node.Name, " ")
-}
-
-func (node *Node) SetValue(v string) {
-	if node == nil {
-		fmt.Println("setting value to nil.node ignored.")
-		return
-	}
-	node.Name = v
-}
-
-func (node *Node) OLR() {
-	if node == nil {
-		return
-	}
-	node.Select()
-	node.L.OLR()
-	node.R.OLR()
-}
-
-func CreateNode(v string) *Node {
-	return &Node{Name: v}
+	Value       string
+	Left, Right *Node
 }
 
 func main() {
-	root := Node{Name: "ShuwenHe"}
-	root.L = &Node{}
-	root.L.SetValue("Ritchie")
-	root.L.R = CreateNode("RitchieSon")
-	root.R = &Node{"Richard", nil, nil}
-	root.R.L = CreateNode("RichardSon")
-
-	fmt.Print("\nOLR: ")
+	root := Node{Value: "Shuwen"}
+	root.Left = &Node{"Ritchie", nil, nil} // n层如何遍历
+	root.Left.Right = &Node{"Ritchie son", nil, nil}
+	root.Right = &Node{"Richard", nil, nil}
+	root.Right.Left = &Node{"Richard son", nil, nil}
 	root.OLR()
+}
+
+func (RootNode *Node) OLR() {
+	// 判断子树根结点是否为空
+	if RootNode == nil {
+		return
+	}
+	// 读取子树RootNode value
+	RootNode.ReadNode()
+	RootNode.Left.OLR()
+	RootNode.Right.OLR()
+}
+
+// 每次读取子树的根结点
+func (RootNode *Node) ReadNode() {
+	fmt.Println(RootNode.Value)
 }
