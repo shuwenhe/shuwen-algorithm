@@ -19,17 +19,16 @@ func main() {
 }
 
 func (RootNode *Node) OLR() {
-	// 判断子树根结点是否为空
-	if RootNode == nil {
+	if RootNode == nil { // 判断根结点是否为空
 		return
 	}
-	// 读取子树RootNode value
-	RootNode.ReadNode()
+
+	fmt.Println(RootNode.Value) // read root node value
 	RootNode.Left.OLR()
 	RootNode.Right.OLR()
 }
 
 // 每次读取子树的根结点
-func (RootNode *Node) ReadNode() {
-	fmt.Println(RootNode.Value)
-}
+// func (RootNode *Node) ReadNode() {
+// 	fmt.Println(RootNode.Value)
+// }
