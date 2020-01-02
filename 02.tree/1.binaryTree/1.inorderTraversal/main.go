@@ -23,7 +23,6 @@ func main() {
 }
 
 func MorrisTraverMid(root *TreeNode) []int {
-
 	// 莫里斯遍历利用叶子节点左右空域存储遍历前驱和后继
 	// 达到时间复杂度O(N)，空间复杂度O(1)
 	// 二叉树的串行遍历
