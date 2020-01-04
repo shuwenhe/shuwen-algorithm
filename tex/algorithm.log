@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.12.28)  4 JAN 2020 11:42
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.12.28)  4 JAN 2020 11:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1139,11 +1139,11 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 
 ] (./algorithm.aux) ) 
 Here is how much of TeX's memory you used:
- 19740 strings out of 493638
- 410844 string characters out of 6146795
+ 19799 strings out of 493638
+ 414710 string characters out of 6146795
  416628 words of memory out of 5000000
- 23018 multiletter control sequences out of 15000+600000
- 3874 words of font info for 31 fonts, out of 8000000 for 9000
+ 23076 multiletter control sequences out of 15000+600000
+ 3882 words of font info for 32 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  65i,4n,77p,10479b,239s stack positions out of 5000i,500n,10000p,200000b,80000s
 
