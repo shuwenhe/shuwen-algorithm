@@ -10,6 +10,8 @@ func f1()  {
 
 func f2()  {
 	fmt.Println("f2")
+
+	
 }
 
 func main()  {
