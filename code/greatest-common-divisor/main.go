@@ -1,3 +1,6 @@
+// 欧几里得辗转相除法
+// 本质：函数递归调用 
+
 package main
 
 import(
