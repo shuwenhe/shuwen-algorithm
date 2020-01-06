@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.12.28)  6 JAN 2020 18:11
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.12.28)  6 JAN 2020 20:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1142,10 +1142,10 @@ LaTeX Font Info:    Font shape `EU1/FandolSong-Regular(0)/m/sl' in size <10.5393
 (Font)              Font shape `EU1/FandolSong-Regular(0)/m/it' tried instead on input line 44.
  [2] [3] (./algorithm.aux) ) 
 Here is how much of TeX's memory you used:
- 19815 strings out of 493638
- 415567 string characters out of 6146795
+ 19824 strings out of 493638
+ 416173 string characters out of 6146795
  420628 words of memory out of 5000000
- 23090 multiletter control sequences out of 15000+600000
+ 23099 multiletter control sequences out of 15000+600000
  3898 words of font info for 34 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  65i,4n,77p,10479b,242s stack positions out of 5000i,500n,10000p,200000b,80000s
