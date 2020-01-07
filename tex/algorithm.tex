@@ -1,52 +1,68 @@
-\documentclass[UTF8]{ctexart}
-    \usepackage{ctex}
+\documentclass[oneside,12pt,twiside,a4paper]{ctexbook}
+
+\usepackage{ctex}
+\usepackage{listings} % 插入代码
+
+%
+% 插入代码
+%
+\lstset{language=C++}%这条命令可以让LaTeX排版时将C++ 键字突出显示
+\lstset{breaklines}%这条命令可以让LaTeX自动将长的代码行换行排版
+\lstset{extendedchars=false}%这一条命令可以解决代码跨页时，章节标题，页眉等汉字不显示的问题
+\lstset{
+    numbers=left,
+    numberstyle= \tiny,
+    keywordstyle= \color{ blue!70},
+    commentstyle= \color{red!50!green!50!blue!50},
+    frame=shadowbox, % 阴影效果
+    rulesepcolor= \color{ red!20!green!20!blue!20} ,
+    escapeinside=``, % 英文分号中可写入中文
+    xleftmargin=2em,xrightmargin=2em, aboveskip=1em,
+    framexleftmargin=2em,
+}
+
+\usepackage{geometry} %页边距和页眉页脚
+\usepackage{titlesec}%TEX标题与正文间距，标题与上下文距离调整
+\titleformat{\chapter}[display]{\normalfont\huge\bfseries\center}{\chaptertitlename}{1pt}{\Huge}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+\titleformat{\paragraph}[runin]{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titleformat{\subparagraph}[runin]{\normalfont\normalsize\bfseries}{\thesubparagraph}{1em}{}
+\titlespacing*{\chapter} {0pt}{10pt}{10pt}
+\titlespacing*{\section} {0pt}{0.5ex plus 1ex minus .2ex}{0.3ex plus .2ex}
+\titlespacing*{\subsection} {0pt}{0.25ex plus 1ex minus .1ex}{0.5ex plus .1ex}
+\titlespacing*{\subsubsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\titlespacing*{\paragraph} {0pt}{3.25ex plus 1ex minus .2ex}{1em}
+\titlespacing*{\subparagraph} {\parindent}{3.25ex plus 1ex minus .2ex}{1em}
+\geometry{left=2.0cm,right=2.1cm,top=2.0cm,bottom=2.5cm}% 页边距和页眉页脚
+
+
 \begin{document}
 
-\section{stack}
-\subsection{函数栈}
-函数调用的局部状态之所以用栈来记录是因为这些数据的存活时间满足“后入先出”（LIFO）顺序，
-而栈的基本操作正好就是支持这种顺序的访问。
+\author
+{
+何书文\\
+1201220707@pku.edu.cn\\
+}
 
-\section{图灵机}
-\subsection{图灵机是为了解决希尔伯特问题}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Go Algorithms}
+\maketitle
+\tableofcontents
+%页眉
+\pagestyle{fancy}
 
-\section{greatest common divisor}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lhead{\includegraphics{logo.png}}
+%\rhead{\includegraphics{   shuwen.png}}
+%\rhead{智能软件平台规划}
+\lfoot{}
+\rfoot{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{数据结构}
-算法需要组织数据，组织数据就产生了数据结构
-
-\section{解决典型问题的各种有效算法}
-
-\section{排序}
-\subsection{插入排序}
-\subsection{选择排序}
-\subsection{希尔排序}
-\subsection{快速排序}
-\subsection{归并排序}
-\subsection{堆排序}
-
-\section{查找}
-\subsection{二叉查找树}
-\subsection{平衡查找树}
-\subsection{散列表}
-
-\section{map}
-
-\section{string}
-
-\section{编程用到的7种语法}
-\subsection{原始数据类型}
-int,float,bool
-\subsection{语句}
-声明、赋值、条件、循环、调用、返回
-\subsection{数组}
-array is 多个同种数据类型的值的集合
-\subsection{function method}
-
-\section{编写自己的库}
-自己编写的每一个程序当做日后可以重用的库，模块化编程解决复杂问题。
-
-\section{API}
-API目的：将调用与实现分离。
+\chapter{list}
+\section{list}
+\subsection{}
 
 \end{document}

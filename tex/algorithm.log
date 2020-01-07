@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.12.28)  6 JAN 2020 20:45
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.12.28)  7 JAN 2020 15:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -7,7 +7,7 @@ entering extended mode
 (/home/shuwen/code/go-project/src/algorithm/tex/algorithm.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/ctex/ctexart.cls (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+(/usr/share/texlive/texmf-dist/tex/latex/ctex/ctexbook.cls (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2016/01/19 v6377 L3 programming layer (loader) 
  (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
 Package: expl3 2016/01/19 v6377 L3 programming layer (code)
@@ -118,7 +118,7 @@ L3 Module: l3luatex 2015/11/11 v6250 L3 Experimental LuaTeX-specific functions
 ) (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
 File: l3xdvidpfmx.def 2015/11/11 v6250 L3 Experimental driver: xdvipdfmx
 ))
-Document Class: ctexart 2016/02/02 v2.3 Chinese adapter for class article (CTEX)
+Document Class: ctexbook 2016/02/02 v2.3 Chinese adapter for class book (CTEX)
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2016/01/19 v6377 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count101
@@ -146,19 +146,20 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 \l__ctex_tmp_box=\box41
  (/usr/share/texlive/texmf-dist/tex/latex/ctex/config/ctexopts.cfg
 File: ctexopts.cfg 2016/02/02 v2.3 Option configuration file (CTEX)
-) (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+) (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count107
-\c@section=\count108
-\c@subsection=\count109
-\c@subsubsection=\count110
-\c@paragraph=\count111
-\c@subparagraph=\count112
-\c@figure=\count113
-\c@table=\count114
+\c@chapter=\count108
+\c@section=\count109
+\c@subsection=\count110
+\c@subsubsection=\count111
+\c@paragraph=\count112
+\c@subparagraph=\count113
+\c@figure=\count114
+\c@table=\count115
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
@@ -185,11 +186,11 @@ Package: xeCJK 2016/02/10 v3.3.4 Typesetting CJK scripts with XeLaTeX
  (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
 Package: xtemplate 2016/01/19 v6377 L3 Experimental prototype document functions
 \l__xtemplate_tmp_dim=\dimen135
-\l__xtemplate_tmp_int=\count115
+\l__xtemplate_tmp_int=\count116
 \l__xtemplate_tmp_muskip=\muskip16
 \l__xtemplate_tmp_skip=\skip49
 )
-\l__xeCJK_tmp_int=\count116
+\l__xeCJK_tmp_int=\count117
 \l__xeCJK_tmp_box=\box42
 \l__xeCJK_tmp_dim=\dimen136
 \l__xeCJK_tmp_skip=\skip50
@@ -198,9 +199,9 @@ Package: xtemplate 2016/01/19 v6377 L3 Experimental prototype document functions
 . 
 . Defining command \xeCJKShipoutHook with sig. '' on line 151.
 .................................................
-\g__xeCJK_spacefactor_int=\count117
-\l__xeCJK_begin_int=\count118
-\l__xeCJK_end_int=\count119
+\g__xeCJK_spacefactor_int=\count118
+\l__xeCJK_begin_int=\count119
+\l__xeCJK_end_int=\count120
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -246,7 +247,7 @@ Package: xtemplate 2016/01/19 v6377 L3 Experimental prototype document functions
 . 
 . Defining command \xeCJKResetCharClass with sig. '' on line 632.
 .................................................
-\g__xeCJK_node_int=\count120
+\g__xeCJK_node_int=\count121
 \c__xeCJK_CJK_node_dim=\dimen137
 \c__xeCJK_CJK-space_node_dim=\dimen138
 \c__xeCJK_default_node_dim=\dimen139
@@ -260,7 +261,7 @@ Package: xtemplate 2016/01/19 v6377 L3 Experimental prototype document functions
 . 
 . Defining command \xeCJKnobreak with sig. '' on line 1409.
 .................................................
-\l__xeCJK_widow_penalty_int=\count121
+\l__xeCJK_widow_penalty_int=\count122
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -326,7 +327,7 @@ Package: xtemplate 2016/01/19 v6377 L3 Experimental prototype document functions
 . 
 . Defining command \setCJKfallbackfamilyfont with sig. 'mO{}m' on line 2414.
 .................................................
-\g__xeCJK_family_int=\count122
+\g__xeCJK_family_int=\count123
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -383,7 +384,7 @@ Package: xtemplate 2016/01/19 v6377 L3 Experimental prototype document functions
 . 
 . Defining command \setCJKmathfont with sig. 'O{}m' on line 3130.
 .................................................
-\l__xeCJK_verb_case_int=\count123
+\l__xeCJK_verb_case_int=\count124
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -399,9 +400,9 @@ Package: xtemplate 2016/01/19 v6377 L3 Experimental prototype document functions
 Package: fontspec 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTeX
  (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
 Package: fontspec-xetex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTeX
-\l_fontspec_script_int=\count124
-\l_fontspec_language_int=\count125
-\l_fontspec_strnum_int=\count126
+\l_fontspec_script_int=\count125
+\l_fontspec_language_int=\count126
+\l_fontspec_strnum_int=\count127
 \l__fontspec_tmpa_dim=\dimen159
 \l__fontspec_tmpb_dim=\dimen160
 \l__fontspec_tmpc_dim=\dimen161
@@ -421,7 +422,7 @@ LaTeX Font Info:    Try loading font information for EU1+lmss on input line 357.
  (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmss.fd
 File: eu1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
-\tipaTiiicode=\count127
+\tipaTiiicode=\count128
 \tipasavetokens=\toks14
 \tipachecktokens=\toks15
  (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
@@ -552,14 +553,14 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 . 
 . Defining command \DeclareFontsExtensions with sig. 'm' on line 599.
 .................................................
-\l__fontspec_tmp_int=\count128
+\l__fontspec_tmp_int=\count129
  (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)
 LaTeX Info: Redefining \itshape on input line 2705.
 LaTeX Info: Redefining \slshape on input line 2710.
 LaTeX Info: Redefining \scshape on input line 2715.
 LaTeX Info: Redefining \upshape on input line 2720.
-\l__fontspec_em_int=\count129
-\l__fontspec_emdef_int=\count130
+\l__fontspec_em_int=\count130
+\l__fontspec_emdef_int=\count131
 LaTeX Info: Redefining \em on input line 2736.
 LaTeX Info: Redefining \emph on input line 2742.
 LaTeX Info: Redefining \- on input line 2746.
@@ -807,7 +808,7 @@ Package: xeCJKfntef 2016/02/10 v3.3.4 xeCJK font effect
 \UL@skip=\skip54
 \UL@hook=\toks17
 \UL@height=\dimen164
-\UL@pe=\count131
+\UL@pe=\count132
 \UL@pixel=\dimen165
 \ULC@box=\box47
 Package: ulem 2012/05/18
@@ -821,7 +822,7 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ) (/usr/share/texmf/tex/latex/CJK/CJKfntef.sty
 Package: CJKfntef 2015/04/18 4.8.4
 \CJK@fntefSkip=\skip55
-\CJK@nest=\count132
+\CJK@nest=\count133
 \CJK@fntefDimen=\dimen167
 \CJK@underdotBox=\box48
 \CJK@ULbox=\box49
@@ -950,7 +951,7 @@ Package: zhnumber 2016/02/02 v2.3 Typesetting numbers with Chinese glyphs
 . 
 . Defining command \zhdate with sig. '+s+m' on line 357.
 .................................................
-\l__zhnum_scale_int=\count133
+\l__zhnum_scale_int=\count134
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -979,30 +980,27 @@ File: zhnumber-utf8.cfg 2016/02/02 v2.3 Chinese numerals with UTF8 encoding
 . LaTeX info: "xparse/define-command"
 . 
 . Defining command \ctex_assign_heading_name:nn with sig. 'm>{\SplitArgument
-. {\c_one }{,}}+m' on line 665.
+. {\c_one }{,}}+m' on line 666.
 .................................................
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \refstepcounter with sig. 'm' on line 1050.
+. Redefining command \refstepcounter with sig. 'm' on line 1132.
 .................................................
- (/usr/share/texlive/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese-article.def
-File: ctex-scheme-chinese-article.def 2016/02/02 v2.3 Chinese scheme for article (CTEX)
+ (/usr/share/texlive/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese-book.def
+File: ctex-scheme-chinese-book.def 2016/02/02 v2.3 Chinese scheme for book (CTEX)
  (/usr/share/texlive/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg
 File: ctex-name-utf8.cfg 2016/02/02 v2.3 Caption with encoding UTF8 (CTEX)
 ))
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \zihao with sig. 'm' on line 1053.
+. Defining command \zihao with sig. 'm' on line 1135.
 .................................................
- (/usr/share/texlive/texmf-dist/tex/latex/ctex/ctex-c5size.clo
-File: ctex-c5size.clo 2016/02/02 v2.3 c5size option (CTEX)
-)
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \CTeX with sig. '' on line 1157.
+. Defining command \CTeX with sig. '' on line 1239.
 .................................................
  (/usr/share/texlive/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-fandol.def
 File: ctex-fontset-fandol.def 2016/02/02 v2.3 Fandol fonts definition (CTEX)
@@ -1012,7 +1010,7 @@ File: ctex-fontset-fandol.def 2016/02/02 v2.3 Fandol fonts definition (CTEX)
 * 
 * Font 'FandolSong-Regular' does not contain script 'CJK'.
 *************************************************
-\g__fontspec_family_FandolSong-Regular_int=\count134
+\g__fontspec_family_FandolSong-Regular_int=\count135
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1050,33 +1048,104 @@ File: ctex-fontset-fandol.def 2016/02/02 v2.3 Fandol fonts definition (CTEX)
 .................................................
 )) (/usr/share/texlive/texmf-dist/tex/latex/ctex/config/ctex.cfg
 File: ctex.cfg 2016/02/02 v2.3 Configuration file (CTEX)
-) (./algorithm.aux)
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count136
+\lst@gtempboxa=\box53
+\lst@token=\toks19
+\lst@length=\count137
+\lst@currlwidth=\dimen172
+\lst@column=\count138
+\lst@pos=\count139
+\lst@lostspace=\dimen173
+\lst@width=\dimen174
+\lst@newlines=\count140
+\lst@lineno=\count141
+\lst@maxwidth=\dimen175
+ (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count142
+\lst@skipnumbers=\count143
+\lst@framebox=\box54
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+ (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+) (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count144
+\Gm@cntv=\count145
+\c@Gm@tempcnt=\count146
+\Gm@bindingoffset=\dimen176
+\Gm@wd@mp=\dimen177
+\Gm@odd@mp=\dimen178
+\Gm@even@mp=\dimen179
+\Gm@layoutwidth=\dimen180
+\Gm@layoutheight=\dimen181
+\Gm@layouthoffset=\dimen182
+\Gm@layoutvoffset=\dimen183
+\Gm@dimlist=\toks20
+) (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2016/03/15 v2.10.1 Sectioning titles
+\ttl@box=\box55
+\beforetitleunit=\skip59
+\aftertitleunit=\skip60
+\ttl@plus=\dimen184
+\ttl@minus=\dimen185
+\ttl@toksa=\toks21
+\titlewidth=\dimen186
+\titlewidthlast=\dimen187
+\titlewidthfirst=\dimen188
+) (/usr/share/texlive/texmf-dist/tex/xelatex/xecjk/xeCJK-listings.sty
+Package: xeCJK-listings 2016/02/10 v3.3.4 xeCJK patch file for listings
+\l__xeCJK_listings_max_char_int=\count147
+\l__xeCJK_listings_flag_int=\count148
+)
+
+LaTeX Warning: Unused global option(s):
+    [twiside].
+
+No file algorithm.aux.
 \openout1 = `algorithm.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 3.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 3.
- (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 41.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 41.
+(/usr/share/texmf/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    ... okay on input line 41.
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 3.
+LaTeX Info: Redefining \selectfont on input line 41.
 .................................................
 . fontspec info: "setup-math"
 . 
@@ -1084,70 +1153,178 @@ LaTeX Info: Redefining \selectfont on input line 3.
 .................................................
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 3.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 3.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 3.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 3.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 3.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 3.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 3.
-LaTeX Font Info:    Redeclaring math accent \check on input line 3.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 3.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 3.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 3.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 3.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 3.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 3.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 3.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 3.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 3.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 3.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 3.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 3.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 3.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 3.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 3.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 3.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 3.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 41.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 41.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 41.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 41.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 41.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 41.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 41.
+LaTeX Font Info:    Redeclaring math accent \check on input line 41.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 41.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 41.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 41.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 41.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 41.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 41.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 41.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 41.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 41.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 41.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 41.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 41.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 41.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 41.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 41.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 41.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 41.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 3.
+(Font)              `operators' in the math version `normal' on input line 41.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> EU1/lmr/m/n on input line 3.
+(Font)                  OT1/cmr/m/n --> EU1/lmr/m/n on input line 41.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 3.
+(Font)              `operators' in the math version `bold' on input line 41.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> EU1/lmr/m/n on input line 3.
+(Font)                  OT1/cmr/bx/n --> EU1/lmr/m/n on input line 41.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  EU1/lmr/m/n --> EU1/lmr/m/n on input line 3.
+(Font)                  EU1/lmr/m/n --> EU1/lmr/m/n on input line 41.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> EU1/lmr/m/it on input line 3.
+(Font)                  OT1/cmr/m/it --> EU1/lmr/m/it on input line 41.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> EU1/lmr/bx/n on input line 3.
+(Font)                  OT1/cmr/bx/n --> EU1/lmr/bx/n on input line 41.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 3.
+(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 41.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> EU1/lmtt/m/n on input line 3.
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/m/n on input line 41.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  EU1/lmr/m/n --> EU1/lmr/bx/n on input line 3.
+(Font)                  EU1/lmr/m/n --> EU1/lmr/bx/n on input line 41.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> EU1/lmr/bx/it on input line 3.
+(Font)                  OT1/cmr/bx/it --> EU1/lmr/bx/it on input line 41.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 3.
+(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 41.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 3.
- [1
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 41.
+\c@lstlisting=\count149
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 480.85143pt, 59.75095pt)
+* v-part:(T,H,B)=(56.9055pt, 717.00946pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=480.85143pt
+* \textheight=717.00946pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-47.23828pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=38.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 51.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 51.
+[1
+
 
 ]
-LaTeX Font Info:    Font shape `EU1/FandolSong-Regular(0)/m/sl' in size <10.53937> not available
-(Font)              Font shape `EU1/FandolSong-Regular(0)/m/it' tried instead on input line 44.
- [2] [3] (./algorithm.aux) ) 
+No file algorithm.toc.
+\tf@toc=\write3
+\openout3 = `algorithm.toc'.
+
+/home/shuwen/code/go-project/src/algorithm/tex/algorithm.tex:54: Undefined control sequence.
+<argument> \undefinedpagestyle 
+                               
+l.54 \pagestyle{fancy}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/shuwen/code/go-project/src/algorithm/tex/algorithm.tex:57: Undefined control sequence.
+l.57 \lhead
+           {\includegraphics{logo.png}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: File `logo.png' not found on input line 57.
+
+/home/shuwen/code/go-project/src/algorithm/tex/algorithm.tex:57: Unable to load picture or PDF file 'logo.png'.
+<to be read again> 
+                   }
+l.57 \lhead{\includegraphics{logo.png}
+                                      }
+The requested image couldn't be read because
+it was not a recognized image format.
+
+File: logo.png Graphic file (type QTm)
+<use  "logo.png" >
+/home/shuwen/code/go-project/src/algorithm/tex/algorithm.tex:57: Unable to load picture or PDF file 'logo.png'.
+<to be read again> 
+                   \GXT@clipend 
+l.57 \lhead{\includegraphics{logo.png}
+                                      }
+The requested image couldn't be read because
+it was not a recognized image format.
+
+/home/shuwen/code/go-project/src/algorithm/tex/algorithm.tex:60: Undefined control sequence.
+l.60 \lfoot
+           {}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/home/shuwen/code/go-project/src/algorithm/tex/algorithm.tex:61: Undefined control sequence.
+l.61 \rfoot
+           {}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[1
+
+]
+第一章
+[2
+
+] (./algorithm.aux) ) 
 Here is how much of TeX's memory you used:
- 19824 strings out of 493638
- 416173 string characters out of 6146795
- 420628 words of memory out of 5000000
- 23099 multiletter control sequences out of 15000+600000
- 3898 words of font info for 34 fonts, out of 8000000 for 9000
+ 21888 strings out of 493638
+ 443860 string characters out of 6146795
+ 427017 words of memory out of 5000000
+ 25122 multiletter control sequences out of 15000+600000
+ 5109 words of font info for 38 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 65i,4n,77p,10479b,242s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,6n,77p,10458b,253s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on algorithm.pdf (3 pages).
