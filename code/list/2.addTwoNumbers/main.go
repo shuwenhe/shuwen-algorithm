@@ -1,20 +1,22 @@
-// 给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。
+package main
+
+import(
+	"fmt"
+)
+// 给出两个非空的链表用来表示两个非负的整数。其中，它们各自的位数是按照逆序的方式存储的，
+// 并且它们的每个节点只能存储一位数字。
 // 如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。
-// 您可以假设除了数字 0 之外，这两个数都不会以 0 开头。
+// 您可以假设除了数字0之外，这两个数都不会以0开头。
 // 示例：
 // 输入：(2 -> 4 -> 3) + (5 -> 6 -> 4)
 // 输出：7 -> 0 -> 8
 // 原因：342 + 465 = 807
-package main
-
-import (
-	"fmt"
-)
 
 type ListNode struct {
 	Val  int
 	Next *ListNode
 }
+
 type List struct {
 	headNode *ListNode // head node
 }
@@ -44,16 +46,16 @@ func main() {
 	l1 := new(ListNode)
 	listDate := l1
 	// insert data to l1
-	Insert(2, listDate, l1)
-	Insert(4, listDate, l1)
-	Insert(3, listDate, l1)
+	Insert(9, listDate, l1)
+	Insert(7, listDate, l1)
+	Insert(5, listDate, l1)
 	l2 := new(ListNode)
 	//
 	listDate2 := l2
 	// insert data to l1
-	Insert(5, listDate2, l2)
-	Insert(6, listDate2, l2)
 	Insert(4, listDate2, l2)
+	Insert(2, listDate2, l2)
+	Insert(8, listDate2, l2)
 	l3 := addTwoNumbers(l1, l2)
 	PrintList(l3)
 }
