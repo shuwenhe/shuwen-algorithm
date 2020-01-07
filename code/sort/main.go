@@ -1,11 +1,11 @@
 package main
 
 import (
-	"fmt"
 	"math/rand"
 )
 
 // quick sort
+// 分治排序
 func main()  {
 	var z []int
 
@@ -37,19 +37,5 @@ func quickSort(list []int)  {
 	quickSort(list[:i]) // 处理参考值前面值
 	quickSort(list[i+1:])
 }
-
-// selection sort
-func main1() {
-	s := []int{2, 3, 8, 9, 0, 7, 5, 6, 1}
-	fmt.Println(s)
-	SelectionSort(s)
-	fmt.Println(s)
-}
-
-func SelectionSort(s []int) {
-	l := len(s)
-	fmt.Println(l)
-}
-
 
 
