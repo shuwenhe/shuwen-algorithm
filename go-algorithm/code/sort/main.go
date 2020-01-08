@@ -5,7 +5,7 @@ import (
 )
 
 // quick sort
-// 分治排序
+// 分治
 func main()  {
 	var z []int
 
