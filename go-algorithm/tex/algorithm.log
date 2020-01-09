@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.12.28)  9 JAN 2020 09:47
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.12.28)  9 JAN 2020 11:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1254,40 +1254,39 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 2.
-)
+ [1
+
+])
 \tf@toc=\write3
 \openout3 = `algorithm.toc'.
 
- [1
-
-]
+LaTeX Font Info:    Font shape `EU1/FandolSong-Regular(0)/m/sl' in size <12> not available
+(Font)              Font shape `EU1/FandolSong-Regular(0)/m/it' tried instead on input line 62.
+ [2]
 第一章
-[2
-
-]
-第二章
 [3
 
 ]
-第三章
+第二章
 [4
 
 ]
-第四章
+第三章
 [5
 
 ]
-第五章
+第四章
 [6
 
 ]
-LaTeX Font Info:    Font shape `EU1/FandolSong-Regular(0)/m/sl' in size <12> not available
-(Font)              Font shape `EU1/FandolSong-Regular(0)/m/it' tried instead on input line 163.
- [7] [8] [9] [10]
-第六章
-[11
+第五章
+[7
 
-] [12]
+] [8] [9] [10] [11]
+第六章
+[12
+
+]
 第七章
 [13
 
@@ -1295,14 +1294,30 @@ LaTeX Font Info:    Font shape `EU1/FandolSong-Regular(0)/m/sl' in size <12> not
 第八章
 [14
 
+]
+第九章
+[15
+
+] [16]
+第十章
+[17
+
+]
+第十一章
+[18
+
+]
+第十二章
+[19
+
 ] (./algorithm.aux) ) 
 Here is how much of TeX's memory you used:
- 22152 strings out of 493638
- 448104 string characters out of 6146795
- 503017 words of memory out of 5000000
- 25371 multiletter control sequences out of 15000+600000
+ 22161 strings out of 493638
+ 448656 string characters out of 6146795
+ 505017 words of memory out of 5000000
+ 25380 multiletter control sequences out of 15000+600000
  7595 words of font info for 52 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 65i,6n,77p,10471b,1045s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,6n,77p,10471b,996s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on algorithm.pdf (15 pages).
+Output written on algorithm.pdf (20 pages).
