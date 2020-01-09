@@ -1,13 +1,23 @@
 \contentsline {chapter}{\numberline {第一章\hspace {0.3em}}Algorithm}{2}
 \contentsline {section}{\numberline {1.1}Overview}{2}
 \contentsline {chapter}{\numberline {第二章\hspace {0.3em}}Logarithm}{3}
+\contentsline {section}{\numberline {2.1}lgn}{3}
 \contentsline {chapter}{\numberline {第三章\hspace {0.3em}}divide and conquer}{4}
-\contentsline {section}{\numberline {3.1}merge sort}{4}
-\contentsline {section}{\numberline {3.2}quick sort}{4}
-\contentsline {chapter}{\numberline {第四章\hspace {0.3em}}Search}{6}
-\contentsline {section}{\numberline {4.1}Binary Search}{6}
-\contentsline {section}{\numberline {4.2}Binary Search Tree}{6}
-\contentsline {chapter}{\numberline {第五章\hspace {0.3em}}list}{7}
-\contentsline {section}{\numberline {5.1}list}{7}
-\contentsline {chapter}{\numberline {第六章\hspace {0.3em}}Sort}{12}
-\contentsline {section}{\numberline {6.1}sort}{12}
+\contentsline {chapter}{\numberline {第四章\hspace {0.3em}}Search}{5}
+\contentsline {section}{\numberline {4.1}Binary Search}{5}
+\contentsline {section}{\numberline {4.2}Binary Search Tree}{5}
+\contentsline {chapter}{\numberline {第五章\hspace {0.3em}}list}{6}
+\contentsline {section}{\numberline {5.1}list}{6}
+\contentsline {chapter}{\numberline {第六章\hspace {0.3em}}Sort}{11}
+\contentsline {section}{\numberline {6.1}comparison sort}{11}
+\contentsline {subsection}{\numberline {6.1.1}quick sort}{11}
+\contentsline {subsection}{\numberline {6.1.2}merge sort}{12}
+\contentsline {subsection}{\numberline {6.1.3}heap sort}{12}
+\contentsline {section}{\numberline {6.2}bubble sort}{12}
+\contentsline {chapter}{\numberline {第七章\hspace {0.3em}}Dynamic programming}{13}
+\contentsline {section}{\numberline {7.1}调度问题}{13}
+\contentsline {section}{\numberline {7.2}矩阵链乘法}{13}
+\contentsline {section}{\numberline {7.3}公共子序列}{13}
+\contentsline {section}{\numberline {7.4}Binary search tree}{13}
+\contentsline {chapter}{\numberline {第八章\hspace {0.3em}}贪心算法}{14}
+\contentsline {section}{\numberline {8.1}最小生成树}{14}

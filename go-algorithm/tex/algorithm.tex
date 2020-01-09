@@ -44,6 +44,7 @@
 {
 Shuwen He\\
 1201220707@pku.edu.cn\\
+Written in Peking University Library
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -62,65 +63,28 @@ Shuwen He\\
 \section{Overview}
 In this book I define algorithms as a branch of mathematics
 
+Algorithm must be designed to solve practical problems. An algorithm that cannot solve practical problems is a vase.
+
+Divide the algorithm in a way that solves the problem
+
+Please believe that learning algorithms have methods
+
+Fresh and refined, immediate, don't be sloppy
+
+I proved the algorithmic mathematical kilometers system
 %
 \chapter{Logarithm}
+\section{lgn}
+$lgn = log_2n$ (Base 2 logarithm)
+
+$lnn=log_en$ (Natural logarithm)
+
+$lg^kn=(lgn)^k$ (Exponentiation)
+
+$lglgn = lg(lgn)$ (complex)
 
 %
 \chapter{divide and conquer}
-%
-\section{merge sort}
-John von Neumann1945
-Merge Sort:
-The linear table to be sorted is continuously divided into several subtables until each 
-subtable contains only one element. 
-At this time, the subtable containing only one element can be considered as an ordered list.
-Merge the subtables in pairs. Each time a new table is generated, 
-a new and longer ordered list is generated. 
-Repeat this step until there is only one subtable left. 
-This subtable is an ordered linear table.
-%
-\section{quick sort}
-\begin{lstlisting}
-    package main
-
-    import (
-        "math/rand"
-    )
-    
-    // quick sort
-    // 分治排序
-    func main()  {
-        var z []int
-    
-        for i := 0; i < 3; i++{
-            z = append(z, rand.Intn(3))
-        }
-        
-        quickSort(z)	
-    }
-    
-    func quickSort(list []int)  {
-        if len(list) <= 1{
-            return
-        }
-    
-        i, j := 0, len(list) - 1
-        index := 1 // 第一次比较索引位置
-        key := list[0] // 第一次比较参考值，选择第一个
-    
-        if list[index] > key{
-            list[i], list[j] = list[j], list[i]
-            j--
-        }else{
-            list[i], list[index] = list[index],list[i]
-            i++
-            index++
-        }
-    
-        quickSort(list[:i]) // 处理参考值前面值
-        quickSort(list[i+1:])
-    }
-\end{lstlisting}
 
 %
 \chapter{Search}
@@ -281,6 +245,82 @@ This subtable is an ordered linear table.
 
 %Sort
 \chapter{Sort}
-\section{sort}
+\section{comparison sort}
+%
+\subsection{quick sort}
+quick sort is better than heap sort
+\begin{lstlisting}
+    package main
+
+    import (
+        "math/rand"
+    )
+    
+    // quick sort
+    // 分治排序
+    func main()  {
+        var z []int
+    
+        for i := 0; i < 3; i++{
+            z = append(z, rand.Intn(3))
+        }
+        
+        quickSort(z)	
+    }
+    
+    func quickSort(list []int)  {
+        if len(list) <= 1{
+            return
+        }
+    
+        i, j := 0, len(list) - 1
+        index := 1 // 第一次比较索引位置
+        key := list[0] // 第一次比较参考值，选择第一个
+    
+        if list[index] > key{
+            list[i], list[j] = list[j], list[i]
+            j--
+        }else{
+            list[i], list[index] = list[index],list[i]
+            i++
+            index++
+        }
+    
+        quickSort(list[:i]) // 处理参考值前面值
+        quickSort(list[i+1:])
+    }
+\end{lstlisting}
+%
+\subsection{merge sort}
+John von Neumann1945
+Merge Sort:
+The linear table to be sorted is continuously divided into several subtables until each 
+subtable contains only one element. 
+At this time, the subtable containing only one element can be considered as an ordered list.
+Merge the subtables in pairs. Each time a new table is generated, 
+a new and longer ordered list is generated. 
+Repeat this step until there is only one subtable left. 
+This subtable is an ordered linear table.
+%
+\subsection{heap sort}
+$O(nlgn)$ (heap sort run time)
+
+%
+\section{bubble sort}
+Repeated swapping of two adjacent elements in reverse order
+
+
+%dynamic programming
+\chapter{Dynamic programming}
+\section{调度问题}
+\section{矩阵链乘法}
+\section{公共子序列}
+\section{Binary search tree}
+
+%
+\chapter{贪心算法}
+\section{最小生成树}
+
+
 
 \end{document}
