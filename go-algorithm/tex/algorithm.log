@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.12.28)  9 JAN 2020 11:23
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.12.28)  9 JAN 2020 21:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1286,38 +1286,38 @@ LaTeX Font Info:    Font shape `EU1/FandolSong-Regular(0)/m/sl' in size <12> not
 第六章
 [12
 
-]
+] [13]
 第七章
-[13
-
-]
-第八章
 [14
 
 ]
-第九章
+第八章
 [15
 
-] [16]
-第十章
-[17
-
 ]
-第十一章
+第九章
+[16
+
+] [17]
+第十章
 [18
 
 ]
-第十二章
+第十一章
 [19
+
+]
+第十二章
+[20
 
 ] (./algorithm.aux) ) 
 Here is how much of TeX's memory you used:
- 22161 strings out of 493638
- 448656 string characters out of 6146795
+ 22181 strings out of 493638
+ 448836 string characters out of 6146795
  505017 words of memory out of 5000000
- 25380 multiletter control sequences out of 15000+600000
+ 25400 multiletter control sequences out of 15000+600000
  7595 words of font info for 52 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  65i,6n,77p,10471b,996s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on algorithm.pdf (20 pages).
+Output written on algorithm.pdf (21 pages).
