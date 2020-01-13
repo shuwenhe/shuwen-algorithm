@@ -22,12 +22,9 @@ func main()  {
 func twoSum(nums []int, target int) []int {
     h := make(map[int]int) // hash table
     for i, value := range nums {
+		h[target-value] = i
         if wanted, ok := h[value]; ok {
             return []int{wanted, i}
-        } else {
-			fmt.Println(h[value])
-			h[target-value] = i
-			fmt.Println(h[target-value])
         }
     }
     return nil
