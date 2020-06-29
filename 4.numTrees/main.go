@@ -20,6 +20,7 @@ func main() {
 	nums := numTrees(3)
 	fmt.Println(nums)
 }
+
 func numTrees(n int) int {
 	dp := make([]int, n+1)
 	dp[0] = 1
