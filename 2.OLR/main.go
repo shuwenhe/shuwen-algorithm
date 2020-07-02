@@ -28,7 +28,3 @@ func (RootNode *Node) OLR() {
 	RootNode.Right.OLR()
 }
 
-// 每次读取子树的根结点
-// func (RootNode *Node) ReadNode() {
-// 	fmt.Println(RootNode.Value)
-// }
