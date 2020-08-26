@@ -1,0 +1,25 @@
+name: "shuwen-bookstore-service"
+addr: ":8080"
+version: "1.0.0"
+debug: true
+db:
+  host: 62.234.11.179
+  username: bookstore
+  password: Bookstore.com@_00..
+  port: 3306
+  dbname: bookstore
+  logMode: true
+netease:
+  appKey: 
+  appSecret: 
+  httpProxy:
+shortCode:
+  debug: false
+oss:
+  accessKeyID: 
+  accessKeySecret: 
+  roleArn: 
+  sessionName:
+sms:
+  account: 
+  password: 

@@ -127,7 +127,6 @@ func main() {
 	root.Left.Right = CreateNode(2)
 	root.Right = &Node{5, nil, nil}
 	root.Right.Left = CreateNode(4)
-
 	fmt.Print("\n前序遍历: ")
 	root.PreOrder()
 	fmt.Print("\n中序遍历: ")
