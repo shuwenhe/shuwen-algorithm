@@ -11,19 +11,19 @@ package main
 import "fmt"
 
 func main() {
-	nums := []int{2, 7, 11, 15}
-	target := 9
-	arr := twoSum(nums, target)
-	fmt.Println("arr = ", arr)
+	nums := []int{2, 7, 11, 15} // 给定一个整数数组nums
+	target := 9                 // 目标值target
+	arr := twoSum(nums, target) // 在该数组中找出和为目标值的那两个整数，并返回他们的数组下标
+	fmt.Println("arr = ", arr)  // 打印下标
 }
 
 func twoSum(nums []int, target int) []int { // 哈希查找的时间复杂度为 O(1)
-	h := make(map[int]int) // 哈希容器map降低时间复杂度
-	for i, value := range nums {
-		if wanted, ok := h[value]; ok {
-			return []int{wanted, i}
+	h := make(map[int]int)   // 哈希容器map降低时间复杂度
+	for k, v := range nums { // 遍历数组nums
+		if wanted, ok := h[v]; ok {
+			return []int{wanted, k}
 		} else {
-			h[target-value] = i
+			h[target-v] = k
 		}
 	}
 	return nil
