@@ -1,36 +1,8 @@
 package main
 
-import(
+import (
 	"fmt"
 )
-
-// hash table
-// 给定一个整数数组nums和一个目标值target，请你在该数组中找出和为目标值的那两个整数，并返回他们的数组下标。
-// 你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。
-// 示例:
-// 给定 nums = [2, 7, 11, 15], target = 9
-// 因为 nums[0] + nums[1] = 2 + 7 = 9
-// 所以返回 [0, 1]
-
-func main1()  {
-	nums := []int{2,7,11,15}
-	target := 9
-	arr := twoSum(nums,target)
-	fmt.Println("arr = ",arr)
-}
-
-// 哈希查找的时间复杂度为 O(1)
-func twoSum(nums []int, target int) []int {
-	h := make(map[int]int) // 哈希容器map降低时间复杂度
-	for k, v := range nums {
-		if i, ok := h[v]; ok {
-			return []int{i,k}
-		}else{
-			h[target - v] = i
-		}
-	}
-	return nil
-}
 
 // 给出两个非空的链表用来表示两个非负的整数。其中，它们各自的位数是按照逆序的方式存储的，
 // 并且它们的每个节点只能存储一位数字。
@@ -41,9 +13,8 @@ func twoSum(nums []int, target int) []int {
 // 输出：7 -> 0 -> 8
 // 原因：342 + 465 = 807
 
-type ListNode struct{
+type ListNode struct {
 	Val string
-		
 }
 
 func Insert2(value int, list *ListNode, position *ListNode) {
