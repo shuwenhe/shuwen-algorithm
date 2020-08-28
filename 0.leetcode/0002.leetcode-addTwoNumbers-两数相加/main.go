@@ -36,7 +36,7 @@ func PrintList2(list *ListNode) {
 	}
 }
 
-func main() {
+func main11() {
 	l1 := new(ListNode)
 	listDate := l1
 	// insert data to l1
