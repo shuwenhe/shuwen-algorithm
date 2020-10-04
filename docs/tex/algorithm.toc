@@ -1,0 +1,32 @@
+\contentsline {chapter}{\numberline {第一章\hspace {.3em}}Algorithm}{2}% 
+\contentsline {section}{\numberline {1.1}Book}{2}% 
+\contentsline {section}{\numberline {1.2}Overview}{2}% 
+\contentsline {chapter}{\numberline {第二章\hspace {.3em}}Logarithm}{3}% 
+\contentsline {section}{\numberline {2.1}lgn}{3}% 
+\contentsline {chapter}{\numberline {第三章\hspace {.3em}}Stack}{4}% 
+\contentsline {chapter}{\numberline {第四章\hspace {.3em}}Queue}{5}% 
+\contentsline {chapter}{\numberline {第五章\hspace {.3em}}list}{6}% 
+\contentsline {section}{\numberline {5.1}list}{6}% 
+\contentsline {chapter}{\numberline {第六章\hspace {.3em}}hash table}{14}% 
+\contentsline {section}{\numberline {6.1}twoSum}{14}% 
+\contentsline {chapter}{\numberline {第七章\hspace {.3em}}divide and conquer}{17}% 
+\contentsline {chapter}{\numberline {第八章\hspace {.3em}}Search}{18}% 
+\contentsline {section}{\numberline {8.1}Binary Search}{18}% 
+\contentsline {section}{\numberline {8.2}Binary Search Tree}{18}% 
+\contentsline {chapter}{\numberline {第九章\hspace {.3em}}Sort}{19}% 
+\contentsline {section}{\numberline {9.1}comparison sort}{19}% 
+\contentsline {subsection}{\numberline {9.1.1}quick sort}{19}% 
+\contentsline {subsection}{\numberline {9.1.2}merge sort}{21}% 
+\contentsline {subsection}{\numberline {9.1.3}heap sort}{21}% 
+\contentsline {section}{\numberline {9.2}bubble sort}{21}% 
+\contentsline {chapter}{\numberline {第十章\hspace {.3em}}Dynamic programming}{22}% 
+\contentsline {section}{\numberline {10.1}调度问题}{22}% 
+\contentsline {section}{\numberline {10.2}矩阵链乘法}{22}% 
+\contentsline {section}{\numberline {10.3}公共子序列}{22}% 
+\contentsline {section}{\numberline {10.4}Binary search tree}{22}% 
+\contentsline {chapter}{\numberline {第十一章\hspace {.3em}}greedy algorithm}{23}% 
+\contentsline {section}{\numberline {11.1}Minimum spanning tree}{23}% 
+\contentsline {section}{\numberline {11.2}Huffman coding}{23}% 
+\contentsline {chapter}{\numberline {第十二章\hspace {.3em}}RBTree}{24}% 
+\contentsline {section}{\numberline {12.1}nature}{24}% 
+\contentsline {section}{\numberline {12.2}rotate}{24}% 

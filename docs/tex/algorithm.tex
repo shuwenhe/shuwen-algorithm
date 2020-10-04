@@ -1,0 +1,405 @@
+\documentclass[oneside,12pt,twiside,a4paper]{ctexbook}
+
+\usepackage{ctex}
+\usepackage{listings} % 插入代码
+
+%
+% 插入代码
+%
+\lstset{language=C++}%这条命令可以让LaTeX排版时将C++ 键字突出显示
+\lstset{breaklines}%这条命令可以让LaTeX自动将长的代码行换行排版
+\lstset{extendedchars=false}%这一条命令可以解决代码跨页时，章节标题，页眉等汉字不显示的问题
+\lstset{
+    numbers=left,
+    numberstyle= \tiny,
+    keywordstyle= \color{ blue!70},
+    commentstyle= \color{red!50!green!50!blue!50},
+    % frame=shadowbox, % 阴影效果
+    rulesepcolor= \color{ red!20!green!20!blue!20} ,
+    escapeinside=``, % 英文分号中可写入中文
+    xleftmargin=2em,xrightmargin=2em, aboveskip=1em,
+    framexleftmargin=2em,
+}
+
+\usepackage{geometry} %页边距和页眉页脚
+\usepackage{titlesec}%TEX标题与正文间距，标题与上下文距离调整
+\titleformat{\chapter}[display]{\normalfont\huge\bfseries\center}{\chaptertitlename}{1pt}{\Huge}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+\titleformat{\paragraph}[runin]{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titleformat{\subparagraph}[runin]{\normalfont\normalsize\bfseries}{\thesubparagraph}{1em}{}
+\titlespacing*{\chapter} {0pt}{10pt}{10pt}
+\titlespacing*{\section} {0pt}{0.5ex plus 1ex minus .2ex}{0.3ex plus .2ex}
+\titlespacing*{\subsection} {0pt}{0.25ex plus 1ex minus .1ex}{0.5ex plus .1ex}
+\titlespacing*{\subsubsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\titlespacing*{\paragraph} {0pt}{3.25ex plus 1ex minus .2ex}{1em}
+\titlespacing*{\subparagraph} {\parindent}{3.25ex plus 1ex minus .2ex}{1em}
+\geometry{left=2.0cm,right=2.1cm,top=2.0cm,bottom=2.5cm}% 页边距和页眉页脚
+
+
+\begin{document}
+
+\author
+{
+Shuwen He\\
+1201220707@pku.edu.cn\\
+Written in Peking University Library
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Algorithm}
+\maketitle
+\tableofcontents
+%页眉
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\rhead{\includegraphics{   shuwen.png}}
+%\rhead{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%
+\chapter{Algorithm}
+\section{Book}
+discrete mathematics
+
+Abstract algebra
+
+Ordinary differential equation
+
+Mathematical analysis
+
+Probability statistics
+
+Computer software and theory
+
+English
+
+\section{Overview}
+In this book I define algorithms as a branch of mathematics
+
+Algorithm must be designed to solve practical problems. An algorithm that cannot solve practical problems is a vase.
+
+Divide the algorithm in a way that solves the problem
+
+Please believe that learning algorithms have methods
+
+Fresh and refined, immediate, don't be sloppy
+
+I proved the algorithmic mathematical kilometers system
+%
+\chapter{Logarithm}
+\section{lgn}
+$lgn = log_2n$ (Base 2 logarithm)
+
+$lnn=log_en$ (Natural logarithm)
+
+$lg^kn=(lgn)^k$ (Exponentiation)
+
+$lglgn = lg(lgn)$ (complex)
+
+%
+\chapter{Stack}
+stack : push + pop
+
+%
+\chapter{Queue}
+queue : enqueue + dequeue
+
+%
+\chapter{list}
+double linked list：value + next and prev
+\section{list}
+\begin{lstlisting}
+    package main
+
+    import(
+        "fmt"
+    )
+    
+    type ListNode struct{
+        Val int 
+        Next *ListNode
+    }
+    
+    func main1()  {
+        headNode := &ListNode{}
+        listData := headNode
+    
+        InsertTail(1,listData,headNode)
+        PrintList(listData)
+    
+        InsertTail(2,listData,headNode)
+        PrintList(listData)
+    
+        InsertTail(3,listData,headNode)
+        PrintList(listData)
+    }
+    
+    func InsertTail(value int,list,position *ListNode)  {
+        tempCell := new(ListNode)
+    
+        if tempCell == nil{
+            fmt.Println("out of space")
+        }
+    
+        tempCell.Val = value
+        tempCell.Next = position.Next
+        position.Next = tempCell
+    }
+    
+    func PrintList(list *ListNode)  {
+        if list.Next != nil{
+            fmt.Print(list.Val,"->")
+            PrintList(list.Next)
+        }else{
+            fmt.Println(list.Val)
+        }
+    }
+    
+    // 给出两个非空的链表用来表示两个非负的整数。其中，它们各自的位数是按照逆序的方式存储的，
+    // 并且它们的每个节点只能存储一位数字。
+    // 如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。
+    // 您可以假设除了数字0之外，这两个数都不会以0开头。
+    // 示例：
+    // 输入：(2 -> 4 -> 3) + (5 -> 6 -> 4)
+    // 输出：7 -> 0 -> 8
+    // 原因：342 + 465 = 807
+    
+    // type ListNode2 struct {
+    // 	Val  int
+    // 	Next *ListNode2
+    // }
+    
+    type List struct {
+        headNode2 *ListNode // head node
+    }
+    
+    func Insert2(value int, list *ListNode, position *ListNode) {
+        tempCell := new(ListNode)
+        if tempCell == nil {
+            fmt.Println("out of space")
+        }
+        tempCell.Val = value
+        tempCell.Next = position.Next
+        position.Next = tempCell
+    }
+    
+    func PrintList2(list *ListNode) {
+        if list.Next != nil {
+            fmt.Println(list.Val)
+            PrintList2(list.Next)
+        } else {
+            fmt.Println(list.Val)
+        }
+    }
+    
+    func main() {
+        l1 := new(ListNode)
+        listDate := l1
+        // insert data to l1
+        Insert2(9, listDate, l1)
+        Insert2(7, listDate, l1)
+        Insert2(5, listDate, l1)
+        l2 := new(ListNode)
+        //
+        listDate2 := l2
+        // insert data to l1
+        Insert2(4, listDate2, l2)
+        Insert2(2, listDate2, l2)
+        Insert2(8, listDate2, l2)
+        l3 := addTwoNumbers(l1, l2)
+        PrintList(l3)
+    }
+    
+    func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
+        promotion := 0     // 进位值, 只可能为0或1
+        var head *ListNode // 结果表的头结点
+        var rear *ListNode // 保存结果表的尾结点
+        for nil != l1 || nil != l2 {
+            sum := 0
+            if nil != l1 {
+                sum += l1.Val
+                l1 = l1.Next
+            }
+            if nil != l2 {
+                sum += l2.Val
+                l2 = l2.Next
+            }
+    
+            sum += promotion
+            promotion = 0
+    
+            if sum >= 10 {
+                promotion = 1
+                sum = sum % 10
+            }
+    
+            node := &ListNode{
+                sum,
+                nil,
+            }
+    
+            if nil == head {
+                head = node
+                rear = node
+            } else {
+                rear.Next = node
+                rear = node
+            }
+        }
+    
+        if promotion > 0 {
+            rear.Next = &ListNode{
+                promotion,
+                nil,
+            }
+        }
+        return head
+    }    
+\end{lstlisting}
+
+%
+\chapter{hash table}
+\section{twoSum}
+\begin{lstlisting}
+// 给定一个整数数组nums和一个目标值target，
+// 请你在该数组中找出和为目标值的那两个整数，并返回他们的数组下标。
+// 你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。
+// 示例:
+// 给定 nums = [2, 7, 11, 15], target = 9
+// 因为 nums[0] + nums[1] = 2 + 7 = 9
+// 所以返回 [0, 1]
+
+package main
+
+import(
+	"fmt"
+)
+
+func main()  {
+	nums := []int{2,7,11,15}
+	target := 9
+	arr := twoSum(nums,target)
+	fmt.Println("arr = ",arr)
+}
+
+func twoSum(nums []int, target int) []int {
+    h := make(map[int]int)
+    for i, value := range nums {
+        if wanted, ok := h[value]; ok {
+            return []int{wanted, i}
+        } else {
+            h[target-value] = i
+        }
+    }
+    return nil
+}
+\end{lstlisting}
+
+%
+\chapter{divide and conquer}
+
+%
+\chapter{Search}
+\section{Binary Search}
+\section{Binary Search Tree}
+
+
+%Sort
+\chapter{Sort}
+\section{comparison sort}
+%
+\subsection{quick sort}
+quick sort (C. A. R. Hoare 1960) 
+
+Divide and Conquer Algorithm for Quick Sort
+
+Quick sort is better than heap sort
+\begin{lstlisting}
+    package main
+
+    import (
+        "math/rand"
+    )
+    
+    // quick sort
+    // 分治排序
+    func main()  {
+        var z []int
+    
+        for i := 0; i < 3; i++{
+            z = append(z, rand.Intn(3))
+        }
+        
+        quickSort(z)	
+    }
+    
+    func quickSort(list []int)  {
+        if len(list) <= 1{
+            return
+        }
+    
+        i, j := 0, len(list) - 1
+        index := 1 // 第一次比较索引位置
+        key := list[0] // 第一次比较参考值，选择第一个
+    
+        if list[index] > key{
+            list[i], list[j] = list[j], list[i]
+            j--
+        }else{
+            list[i], list[index] = list[index],list[i]
+            i++
+            index++
+        }
+    
+        quickSort(list[:i]) // 处理参考值前面值
+        quickSort(list[i+1:])
+    }
+\end{lstlisting}
+%
+\subsection{merge sort}
+John von Neumann1945
+Merge Sort:
+The linear table to be sorted is continuously divided into several subtables until each 
+subtable contains only one element. 
+At this time, the subtable containing only one element can be considered as an ordered list.
+Merge the subtables in pairs. Each time a new table is generated, 
+a new and longer ordered list is generated. 
+Repeat this step until there is only one subtable left. 
+This subtable is an ordered linear table.
+%
+\subsection{heap sort}
+$O(nlgn)$ (heap sort run time)
+
+%
+\section{bubble sort}
+Repeated swapping of two adjacent elements in reverse order
+
+
+%dynamic programming
+\chapter{Dynamic programming}
+\section{调度问题}
+\section{矩阵链乘法}
+\section{公共子序列}
+\section{Binary search tree}
+
+%
+\chapter{greedy algorithm}
+\section{Minimum spanning tree}
+\section{Huffman coding}
+Data compression technology (David A. Huffman1952MIT)
+
+A Method for the Construction of Minimum-Redundancy Codes
+
+%
+\chapter{RBTree}
+RBTree height is $O(lgn)$
+
+color,key,left,right,p
+
+\section{nature}
+
+\section{rotate}
+
+\end{document}
