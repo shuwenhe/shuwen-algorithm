@@ -1,34 +1,16 @@
-package main
+package arraylist
 
 import (
 	"errors"
 	"fmt"
 )
 
-func main() {
-	// list := NewArrayList()
-	var list List = NewArrayList() // 定义接口对象，赋值的对象必须实现接口的所有方法
-	list.Append(1)
-	list.Append(2)
-	list.Append(3)
-	list.Append("a")
-	list.Append("b")
-	list.Append("c")
-	for i := 0; i < 20; i++ {
-		list.Insert(2, "val7")
-		fmt.Println("list-insert = ", list)
-	}
-	list.Delete(2) // CRUD
-	fmt.Println("list-delete = ", list)
-}
-
 // List 接口
 type List interface {
-	Size() int                          // 数组大小
-	Get(index int) (interface{}, error) // 获取第几个元素
-	Append(newval interface{})          // 追加数据
-	String() string                     // 返回字符串
-
+	Size() int                                  // 数组大小
+	Get(index int) (interface{}, error)         // 获取第几个元素
+	Append(newval interface{})                  // 追加数据
+	String() string                             // 返回字符串
 	Set(index int, newval interface{}) error    // 修改数据
 	Insert(index int, newval interface{}) error // 插入数据
 	Clear()                                     // 清空数据
