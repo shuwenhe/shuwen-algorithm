@@ -9,19 +9,19 @@ package main
 import "fmt"
 
 func main() {
-	nums := []int{2, 7, 11, 15} // 给定一个整数数组nums
-	target := 18                // 目标值target
-	arr := twoSum(nums, target) // 在该数组中找出和为目标值的那两个整数，并返回他们的数组下标
-	fmt.Println("arr = ", arr)  // 打印下标
+	nums := []int{2, 7, 11, 15} // Given an integer array nums
+	target := 18                // Target value
+	arr := twoSum(nums, target) // Find the two integers whose sum is the target value in the array, and return their array index
+	fmt.Println("arr = ", arr)  // Print subscript
 }
 
-func twoSum(nums []int, target int) []int { // 哈希查找的时间复杂度为 O(1)
-	hashTable := map[int]int{} // 哈希容器map降低时间复杂度
-	for i, x := range nums {   // 枚举数组中的每一个数x
-		if p, ok := hashTable[target-x]; ok { // 寻找target - x
+func twoSum(nums []int, target int) []int { // The time complexity of hash lookup is O(1)
+	hashTable := map[int]int{} // Hash container map reduces time complexity
+	for i, x := range nums {   // Enumerate each number x in the array
+		if p, ok := hashTable[target-x]; ok { // Find target-x
 			return []int{p, i}
 		}
-		hashTable[x] = i // 将x插入到哈希表中，保证不会让x和自己匹配。
+		hashTable[x] = i // Insert x into the hash table to ensure that x will not match itself.
 	}
 	return nil
 }

@@ -13,33 +13,60 @@ import (
 // 输出：7 -> 0 -> 8
 // 原因：342 + 465 = 807
 
+// ListNode Struct
 type ListNode struct {
 	Val  int
 	Next *ListNode
 }
 
 func main() {
-	l1 := &ListNode{
-		Val: 243,
+	list1Node3 := &ListNode{
+		Val:  3,
+		Next: nil,
 	}
-	l2 := &ListNode{
-		Val: 564,
+	list1Node2 := &ListNode{
+		Val:  4,
+		Next: list1Node3,
 	}
-	l3 := addTwoNumbers(l1, l2)
-	fmt.Println(l3.Val)
+	list1Node1 := &ListNode{
+		Val:  2,
+		Next: list1Node2,
+	}
+
+	list2Node3 := &ListNode{
+		Val:  4,
+		Next: nil,
+	}
+	list2Node2 := &ListNode{
+		Val:  6,
+		Next: list2Node3,
+	}
+	list2Node1 := &ListNode{
+		Val:  5,
+		Next: list2Node2,
+	}
+
+	res := addTwoNumbers(list1Node1, list2Node1)
+	for {
+		fmt.Println(res.Val)
+		if res.Next == nil {
+			break
+		}
+		res = res.Next
+	}
 }
 
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
-	promotion := 0     // 进位值, 只可能为0或1
-	var head *ListNode // 结果表的头结点
-	var rear *ListNode // 保存结果表的尾结点
-	for nil != l1 || nil != l2 {
+	promotion := 0               // Carry value, can only be 0 or 1
+	var head *ListNode           // Head node of the result table
+	var rear *ListNode           // Rear node of the result table
+	for l1 != nil || l2 != nil { // Traverse two linked lists at the same time
 		sum := 0
-		if nil != l1 {
+		if l1 != nil {
 			sum += l1.Val
 			l1 = l1.Next
 		}
-		if nil != l2 {
+		if l2 != nil {
 			sum += l2.Val
 			l2 = l2.Next
 		}
@@ -57,7 +84,7 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 			nil,
 		}
 
-		if nil == head {
+		if head == nil {
 			head = node
 			rear = node
 		} else {
