@@ -14,44 +14,19 @@ import (
 // 原因：342 + 465 = 807
 
 type ListNode struct {
-	Val string
+	Val  int
+	Next *ListNode
 }
 
-func Insert2(value int, list *ListNode, position *ListNode) {
-	tempCell := new(ListNode)
-	if tempCell == nil {
-		fmt.Println("out of space")
+func main() {
+	l1 := &ListNode{
+		Val: 243,
 	}
-	tempCell.Val = value
-	tempCell.Next = position.Next
-	position.Next = tempCell
-}
-
-func PrintList2(list *ListNode) {
-	if list.Next != nil {
-		fmt.Println(list.Val)
-		PrintList2(list.Next)
-	} else {
-		fmt.Println(list.Val)
+	l2 := &ListNode{
+		Val: 564,
 	}
-}
-
-func main11() {
-	l1 := new(ListNode)
-	listDate := l1
-	// insert data to l1
-	Insert2(9, listDate, l1)
-	Insert2(7, listDate, l1)
-	Insert2(5, listDate, l1)
-	l2 := new(ListNode)
-	//
-	listDate2 := l2
-	// insert data to l1
-	Insert2(4, listDate2, l2)
-	Insert2(2, listDate2, l2)
-	Insert2(8, listDate2, l2)
 	l3 := addTwoNumbers(l1, l2)
-	PrintList(l3)
+	fmt.Println(l3.Val)
 }
 
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
