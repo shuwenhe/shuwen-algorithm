@@ -14,7 +14,7 @@ func main() {
 	list.Append("a")
 	list.Append("b")
 	list.Append("c")
-	for i := 0; i < 20; i++ {
+	for i := 0; i < 3; i++ {
 		list.Insert(2, "val7")
 		fmt.Println("list-insert = ", list)
 	}
