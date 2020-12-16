@@ -6,6 +6,23 @@ import (
 )
 
 func main() {
+	var list arraylist.List = arraylist.NewArrayList()
+	list.Append("a")
+	list.Append("b")
+	list.Append("c")
+	list.Append("d")
+	list.Append("e")
+	for it := list.Iterator(); it.HasNext(); {
+		item, _ := it.Next("123456")
+		if item == "d" {
+			it.Remove()
+		}
+		fmt.Println(item)
+	}
+	fmt.Println(list)
+}
+
+func main2() {
 	// list := NewArrayList()
 	var list arraylist.List = arraylist.NewArrayList() // 定义接口对象，赋值的对象必须实现接口的所有方法
 	list.Append(1)

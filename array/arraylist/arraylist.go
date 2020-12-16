@@ -15,6 +15,7 @@ type List interface {
 	Insert(index int, newval interface{}) error // 插入数据
 	Clear()                                     // 清空数据
 	Delete(index int) error                     // 删除第几个数据
+	Iterator() Iterator                         // Interface
 }
 
 // ArrayList struct
@@ -45,7 +46,7 @@ func (list *ArrayList) Size() int {
 	return list.Size() // Return data size
 }
 
-// Get 获取第几个元素
+// Get Get the value by the index
 func (list *ArrayList) Get(index int) (interface{}, error) {
 	if index < 0 || index > list.Size() {
 		return nil, errors.New("索引越界")
