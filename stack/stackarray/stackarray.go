@@ -14,7 +14,7 @@ type StackArray interface {
 type Stack struct {
 	dataSource  []interface{} // Slice
 	capsize     int           // Caption
-	currentsize int           // Current size
+	currentSize int           // Current size
 }
 
 // NewStack New Stack
@@ -22,7 +22,7 @@ func NewStack() *Stack {
 	myStack := new(Stack)
 	myStack.dataSource = make([]interface{}, 10) // Slice
 	myStack.capsize = 10                         // Caption
-	myStack.currentsize = 0
+	myStack.currentSize = 0
 	return myStack
 }
 
@@ -30,20 +30,20 @@ func NewStack() *Stack {
 func (myStack *Stack) Clear() {
 	myStack.dataSource = make([]interface{}, 10) // Slice
 	myStack.capsize = 10                         // Cation size
-	myStack.currentsize = 0
+	myStack.currentSize = 0
 }
 
 // Size Stack size
 func (myStack *Stack) Size() int {
-	return myStack.currentsize
+	return myStack.currentSize
 }
 
 // Pop Pop
 func (myStack *Stack) Pop() interface{} {
 	if !myStack.IsEmpty() {
-		last := myStack.dataSource[myStack.currentsize-1]             // Last data
-		myStack.dataSource = myStack.dataSource[:myStack.currentsize] // Delete last data
-		myStack.currentsize--                                         // Delete
+		last := myStack.dataSource[myStack.currentSize-1]             // Last data
+		myStack.dataSource = myStack.dataSource[:myStack.currentSize] // Delete last data
+		myStack.currentSize--                                         // Delete
 		return last
 	}
 	return nil
@@ -53,13 +53,13 @@ func (myStack *Stack) Pop() interface{} {
 func (myStack *Stack) Push(data interface{}) {
 	if !myStack.IsFull() {
 		myStack.dataSource = append(myStack.dataSource, data) // Append push data into stack
-		myStack.currentsize++
+		myStack.currentSize++
 	}
 }
 
 // IsFull 判断是否已满
 func (myStack *Stack) IsFull() bool {
-	if myStack.currentsize >= myStack.capsize {
+	if myStack.currentSize >= myStack.capsize {
 		return true
 	}
 	return false
@@ -67,7 +67,7 @@ func (myStack *Stack) IsFull() bool {
 
 // IsEmpty 判断是否已空
 func (myStack *Stack) IsEmpty() bool {
-	if myStack.currentsize == 0 {
+	if myStack.currentSize == 0 {
 		return true
 	}
 	return false

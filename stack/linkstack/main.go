@@ -21,6 +21,17 @@ func NewStack() *Node {
 }
 
 func main() {
+	myStack := NewStack()
+	count := 10
+	for i := 0; i < count; i++ {
+		myStack.Push(i)
+	}
+	for data := myStack.Pop(); data != nil; data = myStack.Pop() {
+		fmt.Println(data)
+	}
+}
+
+func main2() {
 	n1 := new(Node)
 	n2 := new(Node)
 	n3 := new(Node)
@@ -58,12 +69,29 @@ func (n *Node) IsEmpty() bool {
 }
 
 func (n *Node) Push(data interface{}) {
+	newNode := &Node{
+		Data:  data,
+		PNext: nil,
+	}
+	newNode.PNext = n.PNext
+	n.PNext = newNode // 头部插入
 }
 
 func (n *Node) Pop() interface{} {
-	return nil
+	if n.IsEmpty() == true {
+		return nil
+	}
+	value := n.PNext.Data   // The data of the pop
+	n.PNext = n.PNext.PNext // Delete
+	return value
 }
 
 func (n *Node) Length() int {
-	return 0
+	pNext := n
+	length := 0
+	for pNext.PNext != nil {
+		pNext = pNext.PNext
+		length++
+	}
+	return length
 }
