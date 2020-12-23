@@ -4,18 +4,21 @@ import (
 	"fmt"
 )
 
-// type LinkStack interface {
-// 	IsEmpty() bool
-// 	Push(data interface{})
-// 	Pop() interface{}
-// 	Length() int
-// }
-
-type Node struct {
-	Data  interface{}
-	PNext *Node
+// LinkStack interface
+type LinkStack interface {
+	IsEmpty() bool
+	Push(data interface{})
+	Pop() interface{}
+	Length() int
 }
 
+// Node struct
+type Node struct {
+	Data  interface{} // Data of the stack
+	PNext *Node       // Next pointer
+}
+
+// NewStack New stack
 func NewStack() *Node {
 	return &Node{}
 }
@@ -68,6 +71,7 @@ func (n *Node) IsEmpty() bool {
 	return false
 }
 
+// Push Push data into stack
 func (n *Node) Push(data interface{}) {
 	newNode := &Node{
 		Data:  data,
@@ -77,6 +81,7 @@ func (n *Node) Push(data interface{}) {
 	n.PNext = newNode // 头部插入
 }
 
+// Pop Pop data from stack
 func (n *Node) Pop() interface{} {
 	if n.IsEmpty() == true {
 		return nil
@@ -86,6 +91,7 @@ func (n *Node) Pop() interface{} {
 	return value
 }
 
+// Length The Length of the stack
 func (n *Node) Length() int {
 	pNext := n
 	length := 0
