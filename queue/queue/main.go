@@ -15,15 +15,15 @@ type MyQueue interface {
 	Clear()                   // Clear the data from queue
 }
 
-// Queue struct
-type Queue struct {
+// ArrayQueue struct
+type ArrayQueue struct {
 	dataStore []interface{} // Queue store data into the slice
 	theSize   int           // Queue size
 }
 
 // NewQueue New Queue
-func NewQueue() *Queue {
-	q := new(Queue)
+func NewQueue() *ArrayQueue {
+	q := new(ArrayQueue)
 	q.dataStore = make([]interface{}, 0)
 	q.theSize = 0
 	return q

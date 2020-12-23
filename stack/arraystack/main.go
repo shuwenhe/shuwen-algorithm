@@ -1,7 +1,7 @@
-package stackarray
+package main
 
-// StackArray Interface
-type StackArray interface {
+// ArrayStack Interface
+type ArrayStack interface {
 	Clear()                // 清空
 	Size() int             // 大小
 	Pop() interface{}      // 弹出
