@@ -27,14 +27,14 @@ func NewLinkQueue() *LinkQueue {
 func main() {
 	fmt.Println("linkqueue")
 	lq := NewLinkQueue()
-	for i := 0; i < 100; i++ {
+	for i := 0; i < 10000000; i++ {
 		lq.EnQueue(i)
 	}
 	for data := lq.DeQueue(); data != nil; data = lq.DeQueue() {
-		fmt.Println("data = ", data)
+		fmt.Println("data = ",data)
 	}
 	lq.EnQueue("a")
-	fmt.Println("data = ", lq.Front.Data)
+	fmt.Println("data = ",lq.Front.Data)
 }
 
 func (lq *LinkQueue) Length() int {
