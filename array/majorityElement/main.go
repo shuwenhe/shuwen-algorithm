@@ -12,13 +12,8 @@ func main() {
 
 func majorityElement(nums []int) int {
 	vote := 0
-	length := 0
-	majority := nums[0]
 	for _, num := range nums {
-				fmt.Println("times = ", vote)
+				fmt.Println("num = ", num)
 			}
-		}
-
-	}
 	return vote
 }

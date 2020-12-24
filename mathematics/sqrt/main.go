@@ -18,8 +18,7 @@ import (
 
 func main() {
 	x := 8
-	sqrt := mySqrt(x)
-	fmt.Println(sqrt)
+	fmt.Println(mySqrt(x))
 }
 
 func mySqrt(x int) int {
