@@ -29,9 +29,9 @@ func main() {
 		Val:  1,
 		Next: n2,
 	}
-	fmt.Println("i = ", deleteNode(n1))
-	fmt.Println("i = ", deleteNode(n2))
-	fmt.Println("i = ", deleteNode(n3))
-	fmt.Println("i = ", deleteNode(n4))
-	fmt.Println("i = ", deleteNode(n1.Next))
+       fmt.Println("i = ",deleteNode(n1))
+       fmt.Println("i = ",deleteNode(n2))
+       fmt.Println("i = ",deleteNode(n3))
+       fmt.Println("i = ",deleteNode(n4))
+       fmt.Println("i = ",deleteNode(n1.Next))
 }
