@@ -42,7 +42,7 @@ func main() {
 func getKthFromEnd(head *ListNode, k int) *ListNode {
 	fast := head
 	slow := head
-	for k > 0 && fast != nil {
+	for k > 0 && fast != nil{
 		fast = fast.Next
 		k--
 	}
