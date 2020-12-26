@@ -7,8 +7,9 @@ type ListNode struct {
 	Next *ListNode
 }
 
-func deleteNode(node *ListNode) int {
-	return node.Val
+func deleteNode(node *ListNode) {
+	node.Val = node.Next.Val
+	node.Next = node.Next.Next
 }
 
 func main() {
@@ -29,9 +30,15 @@ func main() {
 		Val:  1,
 		Next: n2,
 	}
-       fmt.Println("i = ",deleteNode(n1))
-       fmt.Println("i = ",deleteNode(n2))
-       fmt.Println("i = ",deleteNode(n3))
-       fmt.Println("i = ",deleteNode(n4))
-       fmt.Println("i = ",deleteNode(n1.Next))
+	fmt.Println("n1 = ", n1.Val)
+	fmt.Println("n2 = ", n2.Val)
+	fmt.Println("n3 = ", n3.Val)
+	fmt.Println("n4 = ", n4.Val)
+	deleteNode(n3)
+	deleteNode(n2)
+	fmt.Println("***===***")
+	fmt.Println("n1 = ", n1.Val)
+	fmt.Println("n2 = ", n2.Val)
+	fmt.Println("n3 = ", n3.Val)
+	fmt.Println("n4 = ", n4.Val)
 }
