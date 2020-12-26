@@ -8,8 +8,8 @@ type ListNode struct {
 }
 
 func deleteNode(node *ListNode) {
-	node.Val = node.Next.Val
-	node.Next = node.Next.Next
+	node.Val = node.Next.Val // [4,5,1,9] => [4,1,1,9]
+	node.Next = node.Next.Next // [4,1,1,9] => [4,1,9] Delete third node
 }
 
 func main() {
@@ -35,7 +35,6 @@ func main() {
 	fmt.Println("n3 = ", n3.Val)
 	fmt.Println("n4 = ", n4.Val)
 	deleteNode(n3)
-	deleteNode(n2)
 	fmt.Println("***===***")
 	fmt.Println("n1 = ", n1.Val)
 	fmt.Println("n2 = ", n2.Val)
