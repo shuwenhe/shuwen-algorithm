@@ -1,7 +1,7 @@
 package main
 
 import (
-	"algorithm/stack/stackarray"
+	"algorithm/array/1.arraylist/code/stackarray"
 	"fmt"
 )
 
