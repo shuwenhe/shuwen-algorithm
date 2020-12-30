@@ -10,7 +10,7 @@ package main
 import "fmt"
 
 func reverseLeftWords(s string, n int) string {
-str := []rune(s)
+	str := []rune(s)
 	return s
 }
 
