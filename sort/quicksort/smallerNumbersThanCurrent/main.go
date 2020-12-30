@@ -35,10 +35,10 @@ func smallerNumbersThanCurrent(nums []int) []int {
 	n := len(nums)
 	data := make([]pair, n)
 	for i, v := range nums {
-		data[i] = pair{v, i}
+		data[i] = pair{v, i} // 将数组排序，并记录每一个数在原数组中的位置
 	}
 	sort.Slice(data, func(i, j int) bool {
-		return data[i].v < data[j].v
+		return data[i].v < data[j].v // 排序后的数组中的每一个数，我们找出其左侧第一个小于它的数
 	})
 	ans := make([]int, n)
 	prev := -1
