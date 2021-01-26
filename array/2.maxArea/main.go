@@ -20,12 +20,8 @@ func main() {
 }
 
 func maxArea(height []int) int {
-	var (
-		width,
-		high int
-	)
+	var width, high int
 	max, start, end := 0, 0, len(height)-1
-
 	for start < end {
 		width = end - start
 		high = 0
@@ -36,7 +32,6 @@ func maxArea(height []int) int {
 			high = height[end]
 			end--
 		}
-
 		if width*high > max {
 			max = width * high
 		}
