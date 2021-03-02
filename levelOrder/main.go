@@ -15,6 +15,10 @@
 
 package main
 
+import (
+	"fmt"
+)
+
 type TreeNode struct {
 	Val   int
 	Left  *TreeNode
@@ -22,8 +26,27 @@ type TreeNode struct {
 }
 
 func main() {
-	root := &TreeNode{}
-	levelOrder(root)
+	t15 := &TreeNode{
+		Val: 15,
+	}
+	t7 := &TreeNode{
+		Val: 7,
+	}
+	t20 := &TreeNode{
+		Val:   20,
+		Left:  t15,
+		Right: t7,
+	}
+	t9 := &TreeNode{
+		Val: 9,
+	}
+	root := &TreeNode{
+		Val:   3,
+		Left:  t9,
+		Right: t20,
+	}
+	arr := levelOrder(root)
+	fmt.Println("arr = ", arr)
 }
 
 var result [][]int

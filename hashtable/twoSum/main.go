@@ -10,7 +10,7 @@ import "fmt"
 
 func main() {
 	nums := []int{2, 7, 11, 15} // Given an integer array nums
-	target := 18                // Target value
+	target := 9                 // Target value
 	arr := twoSum(nums, target) // Find the two integers whose sum is the target value in the array, and return their array index
 	fmt.Println("arr = ", arr)  // Print subscript
 }
