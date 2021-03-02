@@ -1,4 +1,7 @@
-#shuwen-algorithm
+#shuwen-algorithm 
+# 算法第一人北大何书文 
+# 邮箱 1201220707@pku.edu.cn 
+# 电话微信 15010729356
 https://github.com/shuwenhe/shuwen-algorithm
 # 哔哩哔哩
 https://space.bilibili.com/407705719
